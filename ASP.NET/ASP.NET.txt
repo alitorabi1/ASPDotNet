@@ -1,0 +1,17 @@
+Tutorials:
+ASP.NET 5 has been renamed to ASP.NET Core 1.0.
+https://www.asp.net/web-forms/what-is-web-forms
+https://www.asp.net/web-forms/overview/getting-started		General
+
+https://www.asp.net/web-forms/overview/getting-started/creating-a-basic-web-forms-page
+
+https://www.asp.net/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/introduction-and-overview
+
+In Class exercise:
+Favorite programming languages.
+Send text from one page to another using GET. 
+
+Response.Redirect("B.aspx?name=" + TextBox1.Text);
+TextBox1.Text = Request.QueryString["name"];
+
+Label1.Text = DropDownList1.SelectedItem.ToString() + " " + RadioButtonList1.SelectedItem.ToString ();
