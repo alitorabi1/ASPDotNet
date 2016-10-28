@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/" title="Home" description="Home">
+    <siteMapNode url="~/Default.aspx" title="Home" description="Main Page" />
+    <siteMapNode url="~/Bikes/Default.aspx" title="Bikes" description="Find your bike">
+      <siteMapNode url="~/products.aspx?categoryid=6" title="Road" description="Light, fast bikes designed to fly over pavement. For racing, or recreating, or both." />
+      <siteMapNode url="~/products.aspx?categoryid=5" title="Mountain" description="Sure-footed off-road bikes built to conquer any trail, from tame to treacherous." />
+	  <siteMapNode url="~/products.aspx?categoryid=7" title="Touring" description="Bikes that let you live the two-wheeled life. Haul, commute, get fit, represent, have fun." />
+	</siteMapNode>
+    <siteMapNode url="~/Gear/Default.aspx" title="Gear" description="Riding essentials">
+      <siteMapNode url="~/gear.aspx?category=components" title="Components" description="Components" />
+      <siteMapNode url="~/gear.aspx?category=accessories" title="Accessories" description="Accessories" />
+	  <siteMapNode url="~/gear.aspx?category=clothing" title="Clothing" description="Apparel that will elevate your riding experience to a new level of comfort and style." />
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>
