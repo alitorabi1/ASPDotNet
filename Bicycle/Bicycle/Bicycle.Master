@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Bicycle.master.cs" Inherits="Bicycle.Bicycle" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+	<!-- TODO -->
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 149px;
+            margin-left: 120px;
+        }
+        .auto-style3 {
+            text-align: left;
+        }
+        .auto-style4 {
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <div class="auto-style3">
+            <h1 class="auto-style4">COMPANY TITLE </h1>
+        </div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+			<!-- TODO -->
+                        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" NodeIndent="10" ShowExpandCollapse="False">
+                            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                            <ParentNodeStyle Font-Bold="False" />
+                            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                        </asp:TreeView>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+                    </td>
+                    <td>&nbsp;
+			<!-- TODO -->
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+                            <CurrentNodeStyle ForeColor="#333333" />
+                            <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                            <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                            <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                        </asp:SiteMapPath>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="false" />
+                        
+
+	                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        
+                        </asp:ContentPlaceHolder>
+                        </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
