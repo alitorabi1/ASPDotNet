@@ -1,0 +1,6 @@
+C:\Users\ipd\Documents\AdvancedASPDotNet\FirstExample\FirstExample\bin\FirstExample.dll.config
+C:\Users\ipd\Documents\AdvancedASPDotNet\FirstExample\FirstExample\bin\FirstExample.dll
+C:\Users\ipd\Documents\AdvancedASPDotNet\FirstExample\FirstExample\bin\FirstExample.pdb
+C:\Users\ipd\Documents\AdvancedASPDotNet\FirstExample\FirstExample\obj\Debug\FirstExample.csprojResolveAssemblyReference.cache
+C:\Users\ipd\Documents\AdvancedASPDotNet\FirstExample\FirstExample\obj\Debug\FirstExample.dll
+C:\Users\ipd\Documents\AdvancedASPDotNet\FirstExample\FirstExample\obj\Debug\FirstExample.pdb

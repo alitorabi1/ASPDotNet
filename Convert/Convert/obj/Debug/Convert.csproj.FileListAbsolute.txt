@@ -1,0 +1,6 @@
+C:\Users\ipd\Documents\AdvancedASPDotNet\Convert\Convert\bin\Convert.dll.config
+C:\Users\ipd\Documents\AdvancedASPDotNet\Convert\Convert\bin\Convert.dll
+C:\Users\ipd\Documents\AdvancedASPDotNet\Convert\Convert\bin\Convert.pdb
+C:\Users\ipd\Documents\AdvancedASPDotNet\Convert\Convert\obj\Debug\Convert.csprojResolveAssemblyReference.cache
+C:\Users\ipd\Documents\AdvancedASPDotNet\Convert\Convert\obj\Debug\Convert.dll
+C:\Users\ipd\Documents\AdvancedASPDotNet\Convert\Convert\obj\Debug\Convert.pdb
