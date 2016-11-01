@@ -1,2 +1,7 @@
 https://social.msdn.microsoft.com/Forums/en-US/2b75f659-521e-4e08-b093-11d7bfb63ef1/missing-web-templates-for-c-in-visual-studio-2015?forum=netfxsetup
 https://msdn.microsoft.com/en-us/library/hh873188.aspx
+
+
+http://stackoverflow.com/questions/11260843/getting-data-from-selected-datagridview-row-and-which-event
+http://www.aspsnippets.com/Articles/Selecting-GridView-Row-by-clicking-anywhere-on-the-Row.aspx
+https://www.youtube.com/watch?v=x4BzafaYODM

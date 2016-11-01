@@ -22,7 +22,20 @@
         <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" />
         <br />
         <br />
-        <asp:ListBox ID="lstPeople" runat="server" Width="300"></asp:ListBox>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PersonsConnectionString %>" SelectCommand="SELECT * FROM [Persons]"></asp:SqlDataSource>
+        <br />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" OnRowDataBound="GridView1_RowDataBound">
+            <Columns>
+                <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+                <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                <asp:BoundField DataField="age" HeaderText="age" SortExpression="age" />
+            </Columns>
+        </asp:GridView>
+    
+        <br />
+        <asp:Label ID="lblTemp" runat="server" Text="Label"></asp:Label>
+    
+        <br />
     
     </div>
     </form>

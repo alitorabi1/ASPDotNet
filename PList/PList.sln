@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PList", "PList\PList.csproj", "{BDD6A6CF-523D-40DC-8ACE-D3C42DAF61AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PList", "PList\PList.csproj", "{4C070A4D-42E9-47B2-8FD2-35288E0EECDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BDD6A6CF-523D-40DC-8ACE-D3C42DAF61AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDD6A6CF-523D-40DC-8ACE-D3C42DAF61AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDD6A6CF-523D-40DC-8ACE-D3C42DAF61AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDD6A6CF-523D-40DC-8ACE-D3C42DAF61AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C070A4D-42E9-47B2-8FD2-35288E0EECDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C070A4D-42E9-47B2-8FD2-35288E0EECDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C070A4D-42E9-47B2-8FD2-35288E0EECDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C070A4D-42E9-47B2-8FD2-35288E0EECDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
