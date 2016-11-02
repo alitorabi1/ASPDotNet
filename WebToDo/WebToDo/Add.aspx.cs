@@ -25,8 +25,8 @@ namespace WebToDo
             }
             else
             {
-                //lstPeople.Items.Add(new ListBoxItem(txtName.Text, int.Parse(txtAge.Text)).ToString());
-                string connectionString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\ipd\\Documents\\WebToDo.mdf;Integrated Security=True;Connect Timeout=30";
+//                string connectionString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\ipd\\Documents\\WebToDo.mdf;Integrated Security=True;Connect Timeout=30";
+                string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\lenovo\\Documents\\WebToDoH.mdf; Integrated Security = True; Connect Timeout = 30";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     SqlCommand cmd = new SqlCommand("INSERT INTO ToDos (description, dueDate, isDone) VALUES (@description, @dueDate, @isDone)");
