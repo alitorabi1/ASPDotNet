@@ -15,7 +15,7 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebToDoConnectionString %>" SelectCommand="SELECT * FROM [ToDos]"></asp:SqlDataSource>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:WebToDoHConnectionString %>" SelectCommand="SELECT * FROM [ToDos]"></asp:SqlDataSource>
         <br />
-        <asp:DataGrid ID="DataGrid1" runat="server" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" OitCommand="DataGrid1_EditCommand">
+        <asp:DataGrid ID="DataGrid1" runat="server" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" OitCommand="DataGrid1_EditCommand">
             <alternatingitemstyle backcolor="White" forecolor="#284775" />
             <edititemstyle backcolor="#999999" />
             <footerstyle backcolor="#5D7B9D" font-bold="True" forecolor="White" />
@@ -26,7 +26,7 @@
         </asp:DataGrid>
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" 
-            AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource2" 
+            AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" 
             OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />

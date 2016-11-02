@@ -32,6 +32,13 @@
         <br />
         <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
 
+        <br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebToDoConnectionString %>" SelectCommand="SELECT * FROM [ToDos] WHERE ([ID] = @ID)">
+            <SelectParameters>
+                <asp:QueryStringParameter Name="ID" QueryStringField="ToDoID" Type="Int32" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+
     </div>
     </form>
 </body>

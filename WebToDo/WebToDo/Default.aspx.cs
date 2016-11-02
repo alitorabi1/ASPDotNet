@@ -26,7 +26,7 @@ namespace WebToDo
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
-                e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(GridView1, "Select$" + e.Row.RowIndex);
+                e.Row.Attributes["onclick"] = string.Format("window.location = 'Edit.aspx?ToDoID={0}';", DataBinder.Eval(e.Row.DataItem, "ID"));
                 e.Row.Attributes["style"] = "cursor:pointer";
             }
 
