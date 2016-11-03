@@ -1,0 +1,46 @@
+CREATE TABLE [dbo].[Customers] (
+    [Id]         INT            IDENTITY (1, 1) NOT NULL,
+    [Name]       NVARCHAR (100) NOT NULL,
+    [PostalCode] NCHAR (6)      NULL,
+    [Province]   NCHAR (2)      NOT NULL,
+    [Email]      NVARCHAR (250) NOT NULL,
+    [Gender]     CHAR (1)       NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Provinces] (
+    [Id]   INT           IDENTITY (1, 1) NOT NULL,
+    [Code] NCHAR (2)     NOT NULL,
+    [Name] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    UNIQUE NONCLUSTERED ([Code] ASC)
+);
+
+
+
+
+SET IDENTITY_INSERT [dbo].[Customers] ON
+INSERT INTO [dbo].[Customers] ([Id], [Name], [PostalCode], [Province], [Email], [Gender]) VALUES (1, N'Jerry', N'H7J8L9', N'QC', N'jerry@jerry.com', N'm')
+INSERT INTO [dbo].[Customers] ([Id], [Name], [PostalCode], [Province], [Email], [Gender]) VALUES (2, N'Terry', N'F6H7K8', N'SK', N'terry@terry.com', N'f')
+INSERT INTO [dbo].[Customers] ([Id], [Name], [PostalCode], [Province], [Email], [Gender]) VALUES (3, N'Marry', N'K8J9F5', N'NB', N'marry@marry.com', NULL)
+INSERT INTO [dbo].[Customers] ([Id], [Name], [PostalCode], [Province], [Email], [Gender]) VALUES (8, N'ali', N'H9C1L9', N'NL', N'ali@ali.com', N'm')
+INSERT INTO [dbo].[Customers] ([Id], [Name], [PostalCode], [Province], [Email], [Gender]) VALUES (9, N'mali', N'H4B1R8', N'AB', N'mali@mali.com', NULL)
+SET IDENTITY_INSERT [dbo].[Customers] OFF
+
+
+SET IDENTITY_INSERT [dbo].[Provinces] ON
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (2, N'QC', N'Quebec')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (3, N'ON', N'Ontario')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (4, N'MB', N'Manitona')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (5, N'SK', N'Saskatchewan')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (6, N'NL', N'Newfoundland and Labrador')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (7, N'PE', N'Prince Edward Island')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (8, N'NS', N'Nova Scotia')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (9, N'NB', N'New Brunswick')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (10, N'AB', N'Alberta')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (11, N'BC', N'British Columbia')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (12, N'YT', N'Yukon')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (13, N'NT', N'Northwest Territories')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (14, N'NU', N'Nunavut')
+SET IDENTITY_INSERT [dbo].[Provinces] OFF
