@@ -13,5 +13,9 @@ namespace MVCSayHello.Models
 
         [Required(ErrorMessage = "Age is required."), Range(0, 150)]
         public int Age { get; set; }
+
+        [RegularExpression("")]
+        [Required(ErrorMessage = "Age is required."), Range(0, 150)]
+        public int PostalCode { get; set; }
     }
 }
