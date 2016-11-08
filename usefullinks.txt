@@ -12,3 +12,6 @@ https://aws.amazon.com/
 
 wordpress tutorial
 https://www.youtube.com/watch?v=G8o8u7OtuZY
+
+MVC simplest
+https://www.youtube.com/watch?v=FvZyRYzXyZI

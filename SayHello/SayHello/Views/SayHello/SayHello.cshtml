@@ -1,0 +1,20 @@
+﻿@using SayHello.Models
+@model SayHello.Models.Person
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SayHello</title>
+    @{
+        var person = (Person)TempData["person"];
+    }
+</head>
+<body>
+    <div>
+       <p>Hello @person.Name, you are @person.Age y/o</p>
+    </div>
+</body>
+</html>
