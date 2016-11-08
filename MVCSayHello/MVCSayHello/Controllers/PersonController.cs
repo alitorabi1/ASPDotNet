@@ -15,18 +15,18 @@ namespace MVCSayHello.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Index(PersonModel person)
+        {
+            ViewBag.Msg = "The Person Name is: " + person.Name + " with " + person.Age + " years old added successfuly.";
+            return View();
+        }
+
         //[HttpPost]
         //public ActionResult Person(PersonModel person)
         //{
-        //    ViewBag.Msg = "The Person Name is: " + person.Name + " with " + person.Age + " years old added successfuly.";
+
         //    return View();
         //}
-
-        [HttpPost]
-        public ActionResult Person(PersonModel person)
-        {
-
-            return View();
-        }
     }
 }
