@@ -15,3 +15,7 @@ https://www.youtube.com/watch?v=G8o8u7OtuZY
 
 MVC simplest
 https://www.youtube.com/watch?v=FvZyRYzXyZI
+
+
+MVC using LINQ
+http://www.codeproject.com/Articles/720471/A-Simple-MVC-Application-using-LINQ-to-SQL

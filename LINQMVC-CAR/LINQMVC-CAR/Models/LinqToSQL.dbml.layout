@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinqToSQL">
+  <DataContextMoniker Name="/LinqToSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5c2727ef-17aa-4143-ae86-d59916121dd3" absoluteBounds="0.75, 1, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LinqToSQLDataContext/Owner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ac0492d-7369-4190-9cae-ff5976aede85" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58f1a247-7ee8-4170-9bb7-b33d4925aeee" absoluteBounds="3.5, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/LinqToSQLDataContext/Car" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60900c02-63f2-48f5-99b6-6caa168fca46" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.88544840494792); (3.5 : 1.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqToSQLDataContext/Owner/Owner_Car" />
+      <nodes>
+        <classShapeMoniker Id="5c2727ef-17aa-4143-ae86-d59916121dd3" />
+        <classShapeMoniker Id="58f1a247-7ee8-4170-9bb7-b33d4925aeee" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Cars" Class="LinqToSQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Cars.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CarsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Owner" Member="Owners">
+    <Type Name="Owner">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DriverLicense" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Owner_Car" Member="Cars" ThisKey="Id" OtherKey="OwnerId" Type="Car" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Car" Member="Cars">
+    <Type Name="Car">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Make" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Plates" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Yop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Owner_Car" Member="Owner" ThisKey="OwnerId" OtherKey="Id" Type="Owner" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
