@@ -18,4 +18,5 @@ https://www.youtube.com/watch?v=FvZyRYzXyZI
 
 
 MVC using LINQ
+Best: https://www.youtube.com/watch?v=bsncc8dYIgY
 http://www.codeproject.com/Articles/720471/A-Simple-MVC-Application-using-LINQ-to-SQL
