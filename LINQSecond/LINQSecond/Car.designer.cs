@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LINQ_Cars
+namespace LINQSecond
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -23,7 +23,7 @@ namespace LINQ_Cars
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Cars")]
-	public partial class CarsDataContext : System.Data.Linq.DataContext
+	public partial class CarDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -38,31 +38,31 @@ namespace LINQ_Cars
     partial void DeleteOwner(Owner instance);
     #endregion
 		
-		public CarsDataContext() : 
+		public CarDataContext() : 
 				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["CarsConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public CarsDataContext(string connection) : 
+		public CarDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public CarsDataContext(System.Data.IDbConnection connection) : 
+		public CarDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public CarsDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public CarDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public CarsDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public CarDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

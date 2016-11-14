@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AnimalCare">
+  <DataContextMoniker Name="/AnimalCareDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f56c23db-546d-4668-a501-78b1583352f6" absoluteBounds="3.5, 0.875, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/AnimalCareDataContext/Animal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="981f9d15-473a-4d35-a3fa-efe316fcc9be" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8721dee8-23af-47df-b4f3-41bacee8cdd7" absoluteBounds="0.75, 1.125, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/AnimalCareDataContext/Veterinarian" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6f635a4-be77-4925-ba7d-ae909f3c3949" absoluteBounds="0.765, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.91429768880208); (3.5 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimalCareDataContext/Veterinarian/Veterinarian_Animal" />
+      <nodes>
+        <classShapeMoniker Id="8721dee8-23af-47df-b4f3-41bacee8cdd7" />
+        <classShapeMoniker Id="f56c23db-546d-4668-a501-78b1583352f6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

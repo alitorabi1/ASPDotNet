@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Quiz3AnimalCare" Class="AnimalCareDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Quiz3AnimalCare.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Quiz3AnimalCareConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Animals" Member="Animals">
+    <Type Name="Animal">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RaceBreed" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="VetId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Veterinarian_Animal" Member="Veterinarian" ThisKey="VetId" OtherKey="Id" Type="Veterinarian" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Veterinarians" Member="Veterinarians">
+    <Type Name="Veterinarian">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+      <Association Name="Veterinarian_Animal" Member="Animals" ThisKey="Id" OtherKey="VetId" Type="Animal" />
+    </Type>
+  </Table>
+</Database>
