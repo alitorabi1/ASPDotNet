@@ -1,0 +1,24 @@
+Steps for MVC form handling
+
+1. Create the project MVC
+2. Add a controller which will also add directory for View, without any views yet.
+3. Ask yourself what data will this form operate on
+and create a Model class (similar to Entity) that reflects
+fields of the form you want to create.
+4. Add a View with Model, with annotations
+5. Build->Rebuild solution (maybe)
+6. Complete your HTML form with the necessary fields
+https://blog.michaelckennedy.net/2012/01/20/building-asp-net-mvc-forms-with-razor/
+NOTE: you can use Razor syntax or do regular POST-HTML, but then you would not have the validation of Model
+RECOMMENDATION: User Razor
+
+HOMEWORK:
+1. Complete the exercise - Say Hello
+2. Create new project with the same UI
+where on successful submission you add record to Database
+using Entity Framework.
+
+
+
+
+

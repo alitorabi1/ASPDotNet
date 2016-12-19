@@ -1,0 +1,73 @@
+﻿@model IEnumerable<LinqCarsMVC.Models.Car>
+
+@{
+    ViewBag.Title = "Cars";
+}
+
+<h2>@ViewBag.Heading</h2>
+<p>
+    @Html.ActionLink("Back to List of Options", "Index")
+
+</p>
+
+@if (ViewBag.YopRange != null && ViewBag.YopRange == true)
+{
+    using (Html.BeginForm())
+    {
+        <p>
+            Minimum Year of Prod : @Html.TextBox("yopMinString") <br /><br />
+            Maximum Year of Prod : @Html.TextBox("yopMaxString") <br /><br />
+
+            <input type="submit" value="Filter" />
+        </p>
+    }
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plates)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Yop)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ownerId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Plates)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ownerId)
+            </td>
+        </tr>
+    }
+
+</table>
+

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<LinqCarsMVC.Models.OwnerDetails>
+
+@{
+    ViewBag.Title = "Owners";
+}
+
+<h2>Owners filtered by Age</h2>
+<p>
+    @Html.ActionLink("Back to List of Options", "Index")
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Min Age : @Html.TextBox("AgeMinString") <br /><br />
+        Max Age : @Html.TextBox("AgeMaxString") <br /><br />
+
+        <input type="submit" value="Filter" />
+    </p>
+    }
+    </p>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.DriverLicense)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.Birthdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.DriverLicense)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.Birthdate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+            </tr>
+        }
+
+    </table>

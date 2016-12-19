@@ -1,0 +1,60 @@
+﻿@model IEnumerable<LinqCarsMVC.Models.OwnerDetails>
+
+@{
+    ViewBag.Title = "Owners with Multiple Cars";
+}
+
+<h2>Owners with more than one car </h2>
+<p>
+    @Html.ActionLink("Back to List of Options", "Index")
+
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner.DriverLicense)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner.Birthdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarsCount)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.DriverLicense)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.Birthdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarsCount)
+            </td>
+        </tr>
+    }
+
+</table>
+

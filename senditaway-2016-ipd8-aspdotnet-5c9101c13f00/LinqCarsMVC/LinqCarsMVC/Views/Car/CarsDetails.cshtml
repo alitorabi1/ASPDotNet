@@ -1,0 +1,90 @@
+﻿@model IEnumerable<LinqCarsMVC.Models.CarDetails>
+
+@{
+    ViewBag.Title = "Cars";
+}
+
+<h2>Cars And their Owners matching search </h2>
+<p>
+    @Html.ActionLink("Back to List of Options", "Index")
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Search For: @Html.TextBox("SearchString") <br /><br />
+        <input type="submit" value="Filter" />
+    </p>
+    }
+    </p>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Plates)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Yop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.ownerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.DriverLicense)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner.Birthdate)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.Make)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.Plates)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.Yop)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.ownerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.DriverLicense)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner.Birthdate)
+                </td>
+            </tr>
+        }
+
+    </table>

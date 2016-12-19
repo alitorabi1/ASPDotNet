@@ -1,0 +1,52 @@
+﻿@model IEnumerable<LinqCarsMVC.Models.Car>
+@{
+    ViewBag.Title = "OwnersAndCars";
+}
+
+<h2>OwnersAndCars</h2>
+/
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plates)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Yop)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ownerId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Plates)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ownerId)
+            </td>
+        </tr>
+    }
+
+</table>
+

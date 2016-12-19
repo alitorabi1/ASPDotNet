@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="project.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+	<!-- TODO -->
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 149px;
+        }
+        .auto-style3 {
+            text-align: left;
+        }
+        .auto-style4 {
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <div class="auto-style3">
+            <h1 class="auto-style4">COMPANY TITLE </h1>
+        </div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+			<!-- TODO -->
+                    </td>
+                    <td>&nbsp;
+			<!-- TODO -->
+                        Hello from master page.
+                        new content 
+	                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                           </asp:ContentPlaceHolder>
+                        </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
